@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 export default function MainPage() {
     const router = useRouter();
     const handleClick = () => {
-        router.push('/about-me');
+        router.push('/projects');
     };
 
     return (
@@ -17,7 +17,7 @@ export default function MainPage() {
                 <Grid size={4}>
                     <div className={styles.introduce}>
                         <h2 style={{fontSize: '39px'}}>안녕하세요!</h2>
-                        <p>저는 이재황입니다. 나이는 고등학교 2학년이고, 충주상업고등학교 스마트 IT과에 재학중입니다. 제가 할 수 있는 프로그래밍 언어에는 C, 파이썬, 자바스크립트가 있습니다.</p>
+                        <p>저는 김동우입니다. 나이는 고등학교 2학년이고, 충주상업고등학교 스마트 IT과에 재학중입니다. 제가 할 수 있는 프로그래밍 언어에는 C#, 파이썬, 자바스크립트가 있습니다.</p>
                         <Button variant="contained" onClick={handleClick}>프로젝트 보러가기</Button>
                     </div>
                 </Grid>

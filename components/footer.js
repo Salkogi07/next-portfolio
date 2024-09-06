@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <p>Contact Here</p>
-            <p>ckdtjqdld9632@naver.com</p>
+            <p>kogisal099@gmail.com</p>
         </div>
     )
 }
