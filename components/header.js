@@ -14,7 +14,7 @@ export default function Header() {
                     <ul className={styles.navlist}>
                         <li><Link href='/'>Home</Link></li>
                         <li><Link href='/projects'>Projects</Link></li>
-                        <li><Link href='https://pr-demo-gamma.vercel.app/'>Demo-List</Link></li>
+                        <li><Link href='/demo'>Demo-List</Link></li>
                         <li><Link href='https://open.kakao.com/o/sCwEHxOg'>Contact</Link></li>
                         <li><Link href='/about-me'>Me</Link></li>
                     </ul>
