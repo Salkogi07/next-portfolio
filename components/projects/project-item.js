@@ -15,7 +15,6 @@ export default function ProjectItem({data}){
     const github = data.properties?.Github.url;
     const imgSrc = data.cover.file?.url || data.cover.external.url;
     const demo = data.properties?.Demo.url;
-    console.log(demo);
 
     const router = useRouter();
     
@@ -49,7 +48,7 @@ export default function ProjectItem({data}){
                         {description}
                     </Typography>
                     <Typography variant='body2' sx={{color : "text.secondary"}}>
-                        {tags.map((aTag) => (<span key={aTag.id}>#{aTag.name}</span>))}
+                        {tags.map((aTag) => (<span key={aTag.id}>#{aTag.name} </span>))}
                     </Typography>
                 </CardContent>
                 <CardActions>

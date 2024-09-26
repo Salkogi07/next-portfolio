@@ -2,17 +2,23 @@ body {
     margin: 0;
     padding: 0;
 }
-/* .header {
-    background-color: beige;
-    top: 0; left: 0;
-    position: fixed;
-    height: 8vh;
-    width: 100%;
-} */
-/* .footer {
-    background-color: aquamarine;
-    bottom: 0; left: 0;
-    position: fixed;
-    height: 8vh;    
-    width: 100%;
-} */
+
+h1 {
+    font-size: 2.5rem; /* 제목 크기 */
+    font-weight: bold; /* 굵은 텍스트 */
+    color: #333; /* 텍스트 색상 */
+    text-align: center; /* 중앙 정렬 */
+    margin-bottom: 20px; /* 아래쪽 여백 */
+}
+
+.project_Length {
+    font-size: 1.2rem; /* 폰트 크기 */
+    color: #555; /* 텍스트 색상 */
+    background-color: #f0f0f0; /* 배경색 */
+    padding: 10px 15px; /* 패딩 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    display: inline-block; /* 인라인 블록 요소로 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+    margin-bottom: 15px;
+}
