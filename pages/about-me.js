@@ -16,7 +16,7 @@ export default function AboutMe() {
 
     return (
         <Layout>
-            <Card sx={{ maxWidth: 600, margin: "20px auto" }}>
+            <Card className="card" sx={{ maxWidth: 600, margin: "20px auto" }}>
                 {/* <CardMedia
                     component="img"
                     height="300"
@@ -25,7 +25,7 @@ export default function AboutMe() {
                     sx={{ borderRadius: "50%", width: 150, margin: "20px auto" }}
                 /> */}
                 <CardContent>
-                    <Typography gutterBottom variant="h4" component="div" align="center">
+                    <Typography gutterBottom variant="h4" component="div" align="center" className="fade-in">
                         Hi there, I'm Salkogi07! 👋
                     </Typography>
                     <Typography variant="body2" color="text.secondary" align="center">
