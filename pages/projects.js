@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Grid'; // Grid 대신 사용
+import Grid from '@mui/material/Grid2';
 import Layout from "../components/layout";
 import Head from "next/head";
 import { TOKEN, DATABASE_ID } from "../config";
@@ -7,9 +7,11 @@ import Grow from '@mui/material/Grow';
 import { useState, useEffect } from 'react';
 
 export default function Projects({ projects }) {
+    // 애니메이션을 위한 상태 관리
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
+        // 페이지가 로드되면 애니메이션 시작
         setChecked(true);
     }, []);
 
@@ -28,19 +30,19 @@ export default function Projects({ projects }) {
                     {projects && projects.results.map((aProject, index) => (
                         <Grow 
                             in={checked} 
-                            sx={{ transformOrigin: '0 0 0' }} // sx로 스타일 지정
-                            timeout={500 + index * 300} 
+                            style={{ transformOrigin: '0 0 0' }} 
+                            timeout={500 + index * 300} // 각 항목의 애니메이션 딜레이
                             key={aProject.id}
                         >
-                            <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex' }}>
-                                <ProjectItem data={aProject} sx={{ flexGrow: 1, minHeight: '400px' }} />
+                            <Grid item xs={12} sm={6} md={4} style={{ display: 'flex' }}>
+                                <ProjectItem data={aProject} style={{ flexGrow: 1, minHeight: '400px' }} />
                             </Grid>
                         </Grow>
                     ))}
                 </Grid>
             </Layout>
         </>
-    );
+    )
 }
 
 export async function getStaticProps() {
