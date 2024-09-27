@@ -1,38 +1,38 @@
-/* mainpage.module.css */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.container {
+  background-color: #f0f0f0; /* 배경색 설정 */
+  padding: 20px; /* 여백 설정 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  position: relative; /* 애니메이션 효과를 위한 상대 위치 설정 */
 }
 
 .introduce {
-  opacity: 0;
-  animation: fadeIn 0.8s ease-in-out forwards;
-  animation-delay: 0.3s;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-.lottie-animation {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
+.icon {
+  color: #ff6b6b; /* 게임 아이콘 색상 */
+  margin-left: 10px; /* 아이콘과 텍스트 간격 */
 }
 
 .button {
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px; /* 버튼 위 여백 */
+  background: linear-gradient(45deg, #ff6b6b 30%, #ffcc6b 90%); /* 그라데이션 배경 */
+  color: white; /* 텍스트 색상 */
+  transition: transform 0.3s ease; /* 트랜지션 효과 */
 }
 
 .button:hover {
-  transform: scale(1.03);
-  background-color: #0056c1;
+  transform: scale(1.1); /* 호버 시 크기 증가 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 효과 */
+}
+
+.buttonIcon {
+  margin-right: 5px; /* 아이콘과 텍스트 간격 */
+}
+
+.lottie-animation {
+  display: flex; /* 중앙 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center; /* 중앙 정렬 */
 }

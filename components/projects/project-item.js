@@ -5,6 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useRouter } from "next/router";
+import styles from './item.module.css';
+
 
 export default function ProjectItem({data}){
     const title = data.properties.이름.title[0]?.plain_text;
@@ -35,7 +37,7 @@ export default function ProjectItem({data}){
 
     const workDay = countWorkDays(start,end);
     return ( 
-            <Card sx={{width : 345, display: 'flex', flexDirection:'column',justifyContent:'space-between'}}>
+            <Card className={styles.project_item} sx={{width : 345, display: 'flex', flexDirection:'column',justifyContent:'space-between'}}>
                 <CardMedia sx={{height : 180}} image={imgUrl} title={title}/>
                 <CardContent sx={{flexGrow: 1}}>
                     <Typography gutterBottom variant='h5' component="div">

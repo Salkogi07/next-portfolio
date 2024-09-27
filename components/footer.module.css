@@ -1,9 +1,8 @@
 .footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e7e7e7;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* 또는 static */
     width: 100%;
-    text-align: center;
-    padding: 5px;
+    padding: 20px; /* 원하는 패딩 값 */
+    background-color: #f8f9fa; /* 배경 색상 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-top: 1px solid #dee2e6; /* 상단 경계선 */
 }

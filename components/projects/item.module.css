@@ -1,0 +1,9 @@
+.project_item {
+    margin-top: 50px;
+    transition: transform 0.1s ease;
+}
+
+.project_item:hover {
+    transform: scale(1.05); /* 마우스를 올리면 10% 커짐 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

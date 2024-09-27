@@ -34,7 +34,7 @@ export default function Projects({ projects }) {
                             timeout={500 + index * 300} // 각 항목의 애니메이션 딜레이
                             key={aProject.id}
                         >
-                            <Grid item xs={12} sm={6} md={4} style={{ display: 'flex' }}>
+                            <Grid xs={12} sm={6} md={4} style={{ display: 'flex' }}>
                                 <ProjectItem data={aProject} style={{ flexGrow: 1, minHeight: '400px' }} />
                             </Grid>
                         </Grow>
